@@ -34,7 +34,7 @@ jobs:
       - name: Setup Go
         uses: ./.github/actions/setup-go
       - name: Lint
-        uses: golangci/golangci-lint-action@v6.0.1
+        uses: golangci/golangci-lint-action@v6.1.0
         with:
           version: ${{ env.LINT_VERSION }}
           args: -v ./cmd/... ./pkg/... ./config/...
